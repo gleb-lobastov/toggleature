@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "@toggleature/core-bus" },
+    { "path": "@toggleature/core-browser-init" },
+    { "path": "@toggleature/react-provider" },
+    { "path": "@toggleature/react-widget-mui" }
+  ]
+}

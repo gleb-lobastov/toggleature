@@ -1,0 +1,35 @@
+{
+  "name": "@toggleature/react-widget-mui",
+  "version": "0.0.0",
+  "description": "widget for react implementation of toggleature, based on material-ui",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./types": "./lib/types/index.d.ts"
+  },
+  "types": "lib/types",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleb-lobastov/toggleature.git"
+  },
+  "author": "Gleb Lobastov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gleb-lobastov/toggleature/issues"
+  },
+  "homepage": "https://github.com/gleb-lobastov/toggleature#readme",
+  "peerDependencies": {
+    "lodash": "^4",
+    "react": "^16 || ^17",
+    "react-dom": "^16 || ^17"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@types/lodash": "^4.14.177"
+  }
+}

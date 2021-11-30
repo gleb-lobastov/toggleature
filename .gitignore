@@ -1,0 +1,10 @@
+node_modules
+lib
+dist
+build
+coverage
+storybook-static
+.idea
+.env
+.DS_Store
+.eslintcache

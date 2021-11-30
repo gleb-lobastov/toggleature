@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "declarationDir": "./lib/types",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["./src", "./src/featuresConfig.json"],
+  "exclude": ["./**/*.spec.ts"],
+  "references": [{ "path": "../react-provider" }]
+}

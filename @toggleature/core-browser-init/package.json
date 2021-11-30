@@ -1,0 +1,26 @@
+{
+  "name": "@toggleature/core-browser-init",
+  "version": "0.0.0",
+  "description": "utility core",
+  "main": "lib/index.js",
+  "types": "lib/types",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleb-lobastov/toggleature.git"
+  },
+  "author": "Gleb Lobastov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gleb-lobastov/toggleature/issues"
+  },
+  "homepage": "https://github.com/gleb-lobastov/toggleature#readme",
+  "dependencies": {
+    "@toggleature/core-bus": "0.0.0"
+  }
+}

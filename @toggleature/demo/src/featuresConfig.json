@@ -1,0 +1,9 @@
+{
+  "demoFeature": {
+    "description": "Let's toggle something!",
+    "caption": "Hello world",
+    "responsible": "Gleb",
+    "testReady": true,
+    "inRelease": false
+  }
+}

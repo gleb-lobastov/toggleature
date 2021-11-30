@@ -1,0 +1,30 @@
+{
+  "name": "@toggleature/react-provider",
+  "version": "0.0.0",
+  "description": "react toggleature provider",
+  "main": "lib/index.js",
+  "types": "lib/types",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleb-lobastov/toggleature.git"
+  },
+  "author": "Gleb Lobastov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gleb-lobastov/toggleature/issues"
+  },
+  "homepage": "https://github.com/gleb-lobastov/toggleature#readme",
+  "peerDependencies": {
+    "react": "^16 || ^17",
+    "react-dom": "^16 || ^17"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^17.0.11"
+  }
+}

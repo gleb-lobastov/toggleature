@@ -1,0 +1,43 @@
+{
+  "name": "toggleature",
+  "version": "0.0.0",
+  "description": "feature toggles implementation for browser, which could be used with different frameworks",
+  "workspaces": [
+    "./@toggleature/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -b tsconfig.build.json && npm run build -w @toggleature/demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleb-lobastov/toggleature.git"
+  },
+  "keywords": [
+    "feature",
+    "toggles",
+    "flags",
+    "ci/cd",
+    "tooling"
+  ],
+  "author": "Gleb Lobastov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gleb-lobastov/toggleature/issues"
+  },
+  "homepage": "https://github.com/gleb-lobastov/toggleature#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7"
+  },
+  "dependencies": {
+    "typescript": "^4.5.2"
+  }
+}
