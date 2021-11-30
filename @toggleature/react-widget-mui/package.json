@@ -4,10 +4,12 @@
   "description": "widget for react implementation of toggleature, based on material-ui",
   "main": "lib/index.js",
   "exports": {
-    ".": "./lib/index.js",
-    "./types": "./lib/types/index.d.ts"
+    ".": "./lib/index.js"
   },
   "types": "lib/types",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
