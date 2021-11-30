@@ -5,7 +5,18 @@ const defaultLowLevelStrategy: LowLevelStrategy = {
     window.addEventListener("message", handler);
     return () => window.removeEventListener("message", handler);
   },
-  broadcast: (message) => window.postMessage(message, "*"),
+  broadcast(message) {
+    const iframeMode = window !== window.parent;
+
+    window.postMessage(message, "*");
+    if (iframeMode) {
+      return window.parent.postMessage(message, "*");
+    } else {
+      Array.from(document.querySelectorAll("iframe")).forEach((iframe) =>
+        iframe.contentWindow?.postMessage(message, "*")
+      );
+    }
+  },
 };
 
 export default defaultLowLevelStrategy;
