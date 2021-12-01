@@ -71,7 +71,7 @@ export default function useFeatures<
       }
       return (
         featureTogglesState[featureName] !==
-        featureTogglesConfigRef.current[featureName].enabled
+        featureTogglesConfigRef.current[featureName].inRelease
       );
     },
     [featureTogglesState]
