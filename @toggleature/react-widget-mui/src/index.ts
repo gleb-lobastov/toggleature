@@ -1,1 +1,1 @@
-export { default } from "./FeatureTogglesWidget";
+export { default } from "./FeatureTogglesWidgetContainer";

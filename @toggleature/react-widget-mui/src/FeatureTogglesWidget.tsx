@@ -10,18 +10,11 @@ import FeatureFlagsWidgetPanel from "./FeatureTogglesWidgetPanel";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    position: "fixed",
-    right: "20px",
-    bottom: "20px",
     padding: "16px",
     backgroundColor: "#FFF",
     opacity: "0.8",
     maxHeight: "90vh",
     overflow: "auto",
-    zIndex: theme.zIndex.drawer, // для отображения панели с фича флагами поверх страницы
-    "&:hover": {
-      opacity: "0.8",
-    },
   },
   transparent: {
     backgroundColor: "rgba(255,255,255,0)",
