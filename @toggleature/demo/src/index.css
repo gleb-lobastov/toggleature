@@ -1,6 +1,11 @@
 html,
 body {
   height: 100%;
+  background: transparent;
+}
+
+#frame {
+  background: transparent;
 }
 
 #root {

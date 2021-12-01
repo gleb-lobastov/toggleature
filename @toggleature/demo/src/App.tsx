@@ -1,4 +1,3 @@
-import "./App.css";
 import FeatureFlagsWidget from "@toggleature/react-widget-mui";
 import { FeatureToggleProvider, FeatureToggle } from "./featureToggles";
 
