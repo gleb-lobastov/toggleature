@@ -20,6 +20,12 @@ export default function useToggleatureBus<Features extends string>(
         state: FeatureTogglesState<Features>;
       }) => setFeatureToggles(nextFeaturesConfig),
     });
+    // state could be changed (it's a issue for yabus)
+    connectionPromise.then((connection) => {
+      if (connection.state) {
+        setFeatureToggles(connection.state);
+      }
+    });
     return () => {
       connectionPromise.then((connection) => connection.disconnect());
     };
