@@ -6,14 +6,12 @@ import ToggleOffIcon from "@material-ui/icons/ToggleOff";
 import PickedFeature from "./components/PickedFeature";
 import useFeatures from "./useFeatures";
 import useFeatureTogglePicker from "./useFeatureTogglePicker";
-import FeatureFlagsWidgetPanel from "./FeatureTogglesWidgetPanel";
+import FeatureFlagsWidgetPanel from "./components/FeatureTogglesWidgetPanel";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    padding: "16px",
     backgroundColor: "#FFF",
     opacity: "0.8",
-    maxHeight: "90vh",
     overflow: "auto",
   },
   transparent: {
@@ -21,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
   },
   changed: {
     color: theme.palette.secondary.main,
+  },
+  expanded: {
+    padding: "16px",
   },
 }));
 
@@ -93,7 +94,7 @@ export default function FeatureTogglesWidget<Features extends string>() {
 
   return (
     <FeatureFlagsWidgetPanel<Features>
-      className={classes.container}
+      className={cls(classes.container, classes.expanded)}
       featureTogglesConfig={featureTogglesConfig}
       featureTogglesState={featureTogglesState}
       isFeatureChanged={isFeatureChanged}

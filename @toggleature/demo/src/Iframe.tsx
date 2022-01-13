@@ -1,5 +1,5 @@
-import FeatureFlagsWidget from "@toggleature/react-widget-mui";
+import FeatureTogglesWidget from "@toggleature/react-widget-mui";
 
 export default function Iframe() {
-  return <FeatureFlagsWidget />;
+  return <FeatureTogglesWidget.IframeContainer />;
 }

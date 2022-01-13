@@ -1,0 +1,33 @@
+{
+  "name": "@toggleature/iframe-container",
+  "version": "0.0.1",
+  "description": "small tool to show iframe with toggleature widget",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "types": "lib/types",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleb-lobastov/toggleature.git"
+  },
+  "keywords": [
+    "iframe",
+    "feature",
+    "toggles",
+    "container"
+  ],
+  "author": "Gleb Lobastov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gleb-lobastov/toggleature/issues"
+  },
+  "homepage": "https://github.com/gleb-lobastov/toggleature#readme"
+}

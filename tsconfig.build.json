@@ -3,6 +3,7 @@
   "references": [
     { "path": "@toggleature/core-bus" },
     { "path": "@toggleature/core-browser-init" },
+    { "path": "@toggleature/iframe-container" },
     { "path": "@toggleature/react-provider" },
     { "path": "@toggleature/react-widget-mui" }
   ]

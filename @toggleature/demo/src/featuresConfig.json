@@ -5,5 +5,12 @@
     "responsible": "Gleb",
     "testReady": true,
     "inRelease": false
+  },
+  "iframeContainer": {
+    "description": "Put this container in iframe, to use the widget without adding a code into the bundle",
+    "caption": "Widget in iframe",
+    "responsible": "Gleb",
+    "testReady": true,
+    "inRelease": false
   }
 }

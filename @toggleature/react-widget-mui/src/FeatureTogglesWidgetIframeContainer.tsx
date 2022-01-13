@@ -4,19 +4,14 @@ import useContentResizeEventEmitterForIframe, {
   CHANNEL_KEY,
 } from "./useContentResizeEventEmitterForIframe";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   container: {
-    position: "fixed",
-    right: "20px",
-    bottom: "20px",
-    zIndex: theme.zIndex.drawer, // для отображения панели с фича флагами поверх страницы
-    "&:hover": {
-      opacity: "0.8",
-    },
+    position: "absolute",
+    width: "max-content",
   },
-}));
+});
 
-export default function FeatureTogglesWidgetContainer() {
+export default function FeatureTogglesWidgetFixedContainer() {
   const classes = useStyles();
   const { containerRef } = useContentResizeEventEmitterForIframe();
 
@@ -27,4 +22,4 @@ export default function FeatureTogglesWidgetContainer() {
   );
 }
 
-FeatureTogglesWidgetContainer.CHANNEL_KEY = CHANNEL_KEY;
+FeatureTogglesWidgetFixedContainer.CHANNEL_KEY = CHANNEL_KEY;
