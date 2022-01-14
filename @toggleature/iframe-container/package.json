@@ -1,6 +1,6 @@
 {
   "name": "@toggleature/iframe-container",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "small tool to show iframe with toggleature widget",
   "main": "lib/index.js",
   "exports": {

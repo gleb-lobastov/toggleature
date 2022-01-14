@@ -20,7 +20,6 @@ export default function createIframe(
   try {
     featureTogglesIframe = document.createElement("iframe");
     unsubscribe = subscribeToResizeMessage(({ height, width }) => {
-      console.log("height, width", height, width);
       featureTogglesIframe.style.height = `${height}px`;
       featureTogglesIframe.style.width = `${width}px`;
     });
@@ -66,7 +65,6 @@ function subscribeToResizeMessage(callback: ResizeMessageCallback) {
   function handleResizeMessage(event: MessageEvent) {
     const { data } = event;
     if (typeof data === "string" && data.startsWith(CHANNEL_KEY)) {
-      console.log({ data });
       const [nextWidth, nextHeight] = data.slice(CHANNEL_KEY.length).split("/");
       const actualHeight = Math.max(
         MIN_HEIGHT,
